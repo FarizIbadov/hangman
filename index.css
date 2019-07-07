@@ -73,6 +73,13 @@ h3{
     text-align: center;
 }
 
+h4{
+    font-size: 1.1em;
+    width:75%;
+    margin-left: 15%;
+    padding: 1%;
+}
+
 .under{
     text-decoration: underline;
 }
@@ -84,18 +91,24 @@ h3{
 
 #w,#l{
     position: relative;
-    top:100px;
+    top:10px;
 }
 
 #restart{
     width:50%;
     position: relative;
     left:25%;
-    top:730px;
-    
+    top:750px;
     display: inline-block;
     color:#000;
     background: rgb(155, 5, 5);
+}
+
+#not{
+    position: relative;
+    font-size: 1.5em;
+    left:30%;  
+    top:10px; 
 }
 
 #restart:hover{
@@ -168,7 +181,7 @@ h3{
     #keyboard{
         display:inline-block;
         margin-left:2%;
-        bottom:560px;
+        bottom:535px;
         position: relative;
         width: 85%;
         margin-left:10%;
@@ -204,6 +217,20 @@ h3{
 
     #hidden{
         font-size: 0.7em;
+    }
+
+    h4{
+        font-size: 0.9em;
+        width:75%;
+        margin-left: 15%;
+        padding: 1%;
+    }
+
+    #not{
+        z-index: 2;
+        top:530px;
+        left:-35%;
+        width: 1000px;
     }
 
 
@@ -301,5 +328,16 @@ h3{
         font-size: 1.1em;
     }
 
-  
+    h4{
+        font-size: 1.2em;
+        width:75%;
+        margin-left: 10%;
+        padding: 1%;
+    }
+
+    #not{
+        z-index: 2;
+        top:530px;
+        left:-12%;
+    }
 }

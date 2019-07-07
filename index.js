@@ -15,19 +15,19 @@ let game = {
     default:"./images/blood.jpg",
 
     words: [ 
-     {word:"whale",img:"./images/whale.jpeg"},
-     {word:"axe",img:"./images/axe.jpg"}, 
-     {word:"phone",img:"./images/phone.jpg"},
-     {word:"cocacola",img:"./images/cocacola.png"}, 
-     {word:"laptop",img:"./images/laptop.jpeg"},
-     {word:"kitten",img:"./images/kitten.jpeg"},
-     {word:"elshad",img:"./images/elshad.png"},
-     {word:"car",img:"./images/car.jpeg"},
-     {word:"kazim",img:"./images/Kazim.JPG"},
-     {word:"volcano",img:"./images/volcano.jpg"},
-     {word:"helikopter",img:"./images/helicopter.jpeg"},
-     {word:"matrix",img:"./images/matrix.png"},
-     {word:"millenium-falcon",img:"./images/millenium.jpeg"}
+     {word:"whale",img:"./images/whale.jpeg",hint:"The biggest animal in the ocean"},
+     {word:"axe",img:"./images/axe.jpg",hint:"This tool is used for cutting trees"}, 
+     {word:"phone",img:"./images/phone.jpg",hint:"It is used everytime"},
+     {word:"cocacola",img:"./images/cocacola.png",hint:"It is drunk everytime"}, 
+     {word:"laptop",img:"./images/laptop.jpeg",hint:"MacBook"},
+     {word:"kitten",img:"./images/kitten.jpeg",hint:"Young cat"},
+     {word:"elshad",img:"./images/elshad.png",hint:"Tech academy Bootcamp teacher"},
+     {word:"car",img:"./images/car.jpeg",hint:"das auto"},
+     {word:"kazim",img:"./images/Kazim.JPG",hint:"My brother's friend"},
+     {word:"volcano",img:"./images/volcano.jpg",hint:"The Iceland was created by them"},
+     {word:"helikopter",img:"./images/helicopter.jpeg",hint:"The firefighters use it when skyscrapers or high buildings are in fire"},
+     {word:"matrix",img:"./images/matrix.png",hint:"The best Kianu Rivz's best old movie"},
+     {word:"millenium-falcon",img:"./images/millenium.jpeg",hint:"The main shuttle of STAR WARS"}
     ],
 /*------------------------------------------------------------------------------*/
     Win:function(space){
@@ -85,6 +85,8 @@ let game = {
         document.querySelector('#hidden').innerHTML = ''
         document.querySelector('#rest').innerHTML = this.repeat
         document.querySelector('#count').innerHTML = this.count = this.count_1
+        document.querySelector('#key').innerHTML = ''
+        
         this.lets = true
     },
 /***********************************************************************************/
@@ -112,6 +114,9 @@ let game = {
             document.querySelector('#hidden').innerHTML = this.space_1
             this.lets = false
         }
+
+        document.querySelector('#key').innerHTML =' ' + this.words[this.index]['hint']
+        document.querySelector('#key').style = 'text-decoration:underline'
     },
 /**********************************************************************************/
     checkElements:function(key){
