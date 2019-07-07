@@ -21,7 +21,7 @@ let game = {
      {word:"cocacola",img:"./images/cocacola.png"}, 
      {word:"laptop",img:"./images/laptop.jpeg"},
      {word:"kitten",img:"./images/kitten.jpeg"},
-     {word:"elshad",img:"./images/elshad.webp"},
+     {word:"elshad",img:"./images/elshad.png"},
      {word:"car",img:"./images/car.jpeg"},
      {word:"kazim",img:"./images/Kazim.JPG"},
      {word:"volcano",img:"./images/volcano.jpg"}

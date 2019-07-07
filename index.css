@@ -7,6 +7,7 @@ body{
     color:#fff;
     margin: 0;
     padding: 0;
+    height: 300px;
 }
 
 #main > div{
@@ -45,18 +46,19 @@ body{
 }
 
 #img-res{
-    width:190px;
+    width:42%;
     height:190px;
-    margin: 70px;
+    
     background-size:contain;
     position: relative;
-    bottom: 60px;
+    top: 30px;
+    left:30%;
 }
 
 h2{
     text-align: center;
     font-size: 1.7em;
-    width:90%;
+    width:95%;
     margin:20px auto;
     padding:10px 2px;
     border-radius: 40px;
@@ -82,7 +84,7 @@ h3{
 
 #w,#l{
     position: relative;
-    bottom:100px;
+    top:100px;
 }
 
 #restart{
@@ -112,14 +114,14 @@ h3{
     #header{
         width:100%;
         height: 200px;
-    
+       
         
     } 
     #game{
         width:100%;
         margin-left:0%;
         margin-top: -70px;
-        height: 700px;
+        
     }
     
     #sub-main,#res{
@@ -150,6 +152,7 @@ h3{
         top:200px;
         margin-left:-15%; 
         width: 50%;
+        bottom:100px; 
     }
 
     #img-res{
@@ -196,4 +199,99 @@ h3{
     .under{
         font-size: 0.9em;
     }
+
+
+}
+
+@media screen and (min-width:415px) and (max-width:1024px){
+    #header{
+        width:100%;
+        height: 200px;
+        margin-bottom:10px; 
+        
+    } 
+    #game{
+        width:100%;
+        margin-left:0%;
+        margin-top: -70px;
+        
+    }
+    
+    #sub-main,#res{
+        width:40%;
+        height: 500px;
+        margin-top:60px;
+        box-sizing: border-box;
+        clear: both;
+       
+        
+    }
+
+    #main{
+        margin-left:2%; 
+        width:95%;
+    }
+    
+    #sub-main{
+        position: relative;
+        left:50%;
+        bottom:560px;
+        
+    }
+
+
+    #restart{
+        position: relative;
+        top:200px;
+        margin-left:-10%; 
+        width: 40%;
+        bottom:100px; 
+        display: inline-block;
+    }
+
+    #img-res{
+        position: relative;
+        left:5%;
+        width:60%;
+        height:130px;
+        background-size: 50%;
+    }
+
+    #keyboard{
+        display:inline-block;
+        right:7%;
+        bottom:500px;
+        position: relative;
+        width: 95%;
+        margin-left:10%;
+        
+    }
+
+    #keyboard > h3{
+        background: rgb(155, 5, 5);
+        width:5%;
+        padding:3%;
+        margin:1%;
+        display:inline-block;
+        color: #000;
+    }
+
+    #keyboard > h3:last-child{
+        width:86%;
+    }
+
+    #keyboard > h3:active{
+        cursor: pointer;
+        background: rgb(255, 33, 33);
+        color:#fff;
+    }
+
+    #l,#w{
+        position: relative;
+        top:0.5px;
+    }
+
+
+
+  
 }
