@@ -61,7 +61,7 @@ h2{
     width:95%;
     margin:20px auto;
     padding:10px 2px;
-    border-radius: 40px;
+    border-radius: 30px;
     background: rgb(255, 0, 0);
     color:#fff;
 }
@@ -88,10 +88,12 @@ h3{
 }
 
 #restart{
-    width:15%;
+    width:50%;
     position: relative;
-    left:40%;
-    top:50px;
+    left:25%;
+    top:730px;
+    
+    display: inline-block;
     color:#000;
     background: rgb(155, 5, 5);
 }
@@ -200,6 +202,10 @@ h3{
         font-size: 0.9em;
     }
 
+    #hidden{
+        font-size: 1.1em;
+    }
+
 
 }
 
@@ -291,7 +297,9 @@ h3{
         top:15px;
     }
 
-
+    #hidden{
+        font-size: 1.1em;
+    }
 
   
 }

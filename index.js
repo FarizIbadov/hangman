@@ -1,5 +1,5 @@
 let game = {
-    letters:'abcdefghijklmnopqrstuvwxyz',
+    letters:'abcdefghijklmnopqrstuvwxyz-',
     count: 8,
     count_1:8,
     wins: 0,
@@ -24,7 +24,10 @@ let game = {
      {word:"elshad",img:"./images/elshad.png"},
      {word:"car",img:"./images/car.jpeg"},
      {word:"kazim",img:"./images/Kazim.JPG"},
-     {word:"volcano",img:"./images/volcano.jpg"}
+     {word:"volcano",img:"./images/volcano.jpg"},
+     {word:"helikopter",img:"./images/helicopter.jpeg"},
+     {word:"matrix",img:"./images/matrix.png"},
+     {word:"millenium-falcon",img:"./images/millenium.jpeg"}
     ],
 /*------------------------------------------------------------------------------*/
     Win:function(space){
@@ -207,6 +210,7 @@ let w = document.querySelector('.w')
 let x = document.querySelector('#x')
 let y = document.querySelector('#y')
 let z = document.querySelector('#z')
+let hiphon = document.querySelector('#hiphon')
 let backspace = document.querySelector('#backspace')
 
 a.onclick = function(){
@@ -336,6 +340,11 @@ y.onclick = function(){
 
 z.onclick = function(){
     KEY = 'z'
+    game.start(KEY)
+}
+
+hiphon.onclick = function(){
+    KEY = '-'
     game.start(KEY)
 }
 
