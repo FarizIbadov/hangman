@@ -152,8 +152,8 @@ h3{
     #restart{
         position: relative;
         top:200px;
-        margin-left:-15%; 
-        width: 50%;
+        margin-left:-25%; 
+        width: 100%;
         bottom:100px; 
     }
 
@@ -203,7 +203,7 @@ h3{
     }
 
     #hidden{
-        font-size: 1.1em;
+        font-size: 0.7em;
     }
 
 
@@ -249,8 +249,8 @@ h3{
     #restart{
         position: relative;
         top:200px;
-        margin-left:-10%; 
-        width: 40%;
+        margin-left:-23%; 
+        width: 95%;
         bottom:100px; 
         display: inline-block;
     }
