@@ -134,9 +134,7 @@ h4{
         right:2%;
     }
 
-    body{
-        width:800px;
-    }
+
 
     body > div {
         width:100%;
@@ -238,7 +236,7 @@ h4{
     #not{
         z-index: 2;
         top:530px;
-        left:-15%;
+        left:-33%;
         width: 1000px;
     }
 
@@ -295,9 +293,9 @@ h4{
 
     #img-res{
         
-        margin-left:3%;
-        width:50%;
-        height:200px;
+        margin-left:-1%;
+        width:55%;
+        height:110px;
         
     }
 
